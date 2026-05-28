@@ -10,56 +10,68 @@
     </head>
 
     <body>
-
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-lg py-3">
+            <div class="container">
+                
+                <a class="navbar-brand fw-bold fs-3 text-info" href="#">
+                    Eduardo<span class="text-light">Vilarino</span>
+                </a>
+        
+        
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+                <div class="collapse navbar-collapse" id="navbarNav">
+        
+                    <ul class="navbar-nav mx-auto gap-3">
+        
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
+                            <a class="nav-link active text-info fw-semibold" href="#">
+                                Início
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </li>
+        
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link text-light" href="#">
+                                Sobre
+                            </a>
                         </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                Projetos
+                            </a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                Contato
+                            </a>
+                        </li>
+        
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+        
+                    <form class="d-flex">
+                        <input class="form-control bg-dark text-light border-secondary me-2"
+                            type="search"
+                            placeholder="Pesquisar">
+        
+                        <button class="btn btn-info fw-semibold" type="submit">
+                            Buscar
+                        </button>
                     </form>
+        
                 </div>
             </div>
         </nav>
 
-        <!-- HERO -->
         <section class="bg-dark text-white p-5">
 
             <div class="container text-center">
 
-                <img src="https://via.placeholder.com/150" class="rounded-circle mb-3">
+                <img src="https://th.bing.com/th/id/R.31484d622c8da9544cb841bef1fd7ec2?rik=aWo0lGpTBhXm9w&pid=ImgRaw&r=0" class="rounded-circle mb-3" >
 
                 <h1>Eduardo Vilarino</h1>
 
@@ -72,29 +84,21 @@
             </div>
 
         </section>
-        <!-- SOBRE MIM -->
 
         <section class="container my-5">
-
-            <!-- TÍTULO -->
 
             <h2 class="text-center mb-5">
                 Sobre Mim
             </h2>
 
-            <!-- LINHA -->
-
             <div class="row align-items-center">
 
-                <!-- FOTO -->
 
                 <div class="col-md-4 text-center">
 
-                    <img src="https://via.placeholder.com/250" class="img-fluid rounded-circle shadow">
+                    <img src="https://imagens.mdig.com.br/bichos/pangolim_estevie.jpg" class="img-fluid rounded-circle shadow">
 
                 </div>
-
-                <!-- TEXTO -->
 
                 <div class="col-md-8">
 
@@ -118,8 +122,6 @@
                             Meu objetivo é crescer na área de tecnologia
                             e me tornar um desenvolvedor web.
                         </p>
-
-                        <!-- HABILIDADES -->
 
                         <h5 class="mt-3">
                             Habilidades
@@ -145,62 +147,37 @@
 
         </section>
 
-      <!-- CONTATO -->
-
-<section class="bg-dark text-white py-5">
-
-    <div class="container">
-
-        <h2 class="text-center mb-5">
-            Contato
-        </h2>
-
-        <form class="w-50 mx-auto">
-
-            <input type="text"
-            class="form-control mb-3"
-            placeholder="Digite seu nome">
-
-            <input type="email"
-            class="form-control mb-3"
-            placeholder="Digite seu email">
-
-            <textarea
-            class="form-control mb-3"
-            rows="5"
-            placeholder="Digite sua mensagem">
-            </textarea>
-
-            <button class="btn btn-success w-100">
-                Enviar
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-        <!-- CONTATO -->
         <section class="bg-dark text-white py-5">
+
             <div class="container">
-                <h2 class="text-center mb-4">Contato</h2>
+
+                <h2 class="text-center mb-5">
+                    Contato
+                </h2>
 
                 <form class="w-50 mx-auto">
-                    <input type="text" class="form-control mb-3" placeholder="Nome">
-                    <input type="email" class="form-control mb-3" placeholder="Email">
-                    <textarea class="form-control mb-3" placeholder="Mensagem"></textarea>
-                    <button class="btn btn-success w-100">Enviar</button>
+
+                    <input type="text" class="form-control mb-3" placeholder="Digite seu nome">
+
+                    <input type="email" class="form-control mb-3" placeholder="Digite seu email">
+
+                    <textarea class="form-control mb-3" rows="5" placeholder="Digite sua mensagem">
+            </textarea>
+
+                    <button class="btn btn-success w-100">
+                        Enviar
+                    </button>
+
                 </form>
+
             </div>
+
         </section>
 
-        <!-- FOOTER -->
         <footer class="text-center p-3 bg-black text-white">
             © 2026 - Seu Nome
         </footer>
 
-        <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
